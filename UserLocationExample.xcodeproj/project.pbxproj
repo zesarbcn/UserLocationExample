@@ -21,6 +21,7 @@
 		495270BF18E6535C00E8BACC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 495270A118E6535C00E8BACC /* UIKit.framework */; };
 		495270C718E6535C00E8BACC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 495270C518E6535C00E8BACC /* InfoPlist.strings */; };
 		495270C918E6535C00E8BACC /* UserLocationExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 495270C818E6535C00E8BACC /* UserLocationExampleTests.m */; };
+		495270D618E6574F00E8BACC /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 495270D518E6574F00E8BACC /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		495270C418E6535C00E8BACC /* UserLocationExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UserLocationExampleTests-Info.plist"; sourceTree = "<group>"; };
 		495270C618E6535C00E8BACC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		495270C818E6535C00E8BACC /* UserLocationExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserLocationExampleTests.m; sourceTree = "<group>"; };
+		495270D518E6574F00E8BACC /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				495270D618E6574F00E8BACC /* CoreLocation.framework in Frameworks */,
 				495270A018E6535C00E8BACC /* CoreGraphics.framework in Frameworks */,
 				495270A218E6535C00E8BACC /* UIKit.framework in Frameworks */,
 				4952709E18E6535C00E8BACC /* Foundation.framework in Frameworks */,
@@ -101,6 +104,7 @@
 		4952709C18E6535C00E8BACC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				495270D518E6574F00E8BACC /* CoreLocation.framework */,
 				4952709D18E6535C00E8BACC /* Foundation.framework */,
 				4952709F18E6535C00E8BACC /* CoreGraphics.framework */,
 				495270A118E6535C00E8BACC /* UIKit.framework */,
@@ -112,11 +116,11 @@
 		495270A318E6535C00E8BACC /* UserLocationExample */ = {
 			isa = PBXGroup;
 			children = (
+				495270D418E6538000E8BACC /* Controller */,
+				495270D318E6537800E8BACC /* View */,
+				495270D218E6536F00E8BACC /* Model */,
 				495270AC18E6535C00E8BACC /* AppDelegate.h */,
 				495270AD18E6535C00E8BACC /* AppDelegate.m */,
-				495270AF18E6535C00E8BACC /* Main.storyboard */,
-				495270B218E6535C00E8BACC /* ViewController.h */,
-				495270B318E6535C00E8BACC /* ViewController.m */,
 				495270B518E6535C00E8BACC /* Images.xcassets */,
 				495270A418E6535C00E8BACC /* Supporting Files */,
 			);
@@ -150,6 +154,30 @@
 				495270C518E6535C00E8BACC /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		495270D218E6536F00E8BACC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		495270D318E6537800E8BACC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				495270AF18E6535C00E8BACC /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		495270D418E6538000E8BACC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				495270B218E6535C00E8BACC /* ViewController.h */,
+				495270B318E6535C00E8BACC /* ViewController.m */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

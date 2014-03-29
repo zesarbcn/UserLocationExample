@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreLocation/CoreLocation.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <CLLocationManagerDelegate>
+
+@property (weak, nonatomic) IBOutlet UILabel *latLabel;
+@property (weak, nonatomic) IBOutlet UILabel *longLabel;
+@property (weak, nonatomic) IBOutlet UILabel *adrLabel;
+
+- (IBAction)getCurrentLocation:(id)sender;
 
 @end
